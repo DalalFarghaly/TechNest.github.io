@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNest — Learn to Build, Not Just Watch</title>
+    <title>DF Labs — Learn to Build, Not Just Watch</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,123 +15,125 @@
         <div class="wrap nav">
             <div class="logo">
                 <span class="logo-chip header-chip">
-                    <img src="img2_50.png" />                </span>
-                TechNest
+                    <img src="labIMG.png" alt="DF Labs Logo" />
+                </span>
+                <span class="logo-text" data-translate="brand-name">DF Labs</span>
             </div>
             <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#free-trial">Free Trial</a>
-                <a href="#program">Program</a>
-                <a href="#register">Contact</a>
+                <a href="#home" data-translate="nav-home">Home</a>
+                <a href="#samples" data-translate="nav-samples">Samples</a>
+                <a href="#program" data-translate="nav-program">Program</a>
+                <a href="#camp" data-translate="nav-camp">Free Camp</a>
+                <a href="#register" data-translate="nav-contact">Contact</a>
             </nav>
-            <a href="#register" class="nav-cta">Join Now</a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text" id="langText" data-translate="lang-toggle">Arabic</span>
+                </button>
+                <a href="#register" class="nav-cta" data-translate="nav-join">Join Now</a>
+            </div>
         </div>
     </header>
 
     <main id="home">
-
         <!-- ================= HERO ================= -->
         <section class="hero">
             <div class="wrap">
-                <span class="logo-chip hero-chip" style="display:flex;">
-                    <img src="logoImg.png" />
+                <span class="logo-chip hero-chip" style="display:flex; position:relative;">
+                    <img src="labIMG.png" alt="DF Labs" style="position:relative; z-index:1; max-width:700px; height:auto; display:block;" />
                 </span>
-                <span class="eyebrow"><span class="dot"></span>New cohort opening soon</span>
-                <h1>Where your first line of code <span class="accent">hatches</span> into a real skill.</h1>
+                <span class="eyebrow"><span class="dot"></span><span data-translate="hero-badge">New cohort opening soon</span></span>
+                <h1><span data-translate="hero-title">Where your first line of code <span class="accent">hatches</span> into a real skill.</span></h1>
                 <p class="hero-sub">
-                    TechNest is a hands-on tech program that takes you from curious beginner to confident builder — one guided lesson at a time.
-                    <span class="ar">TechNest برنامج تقني عملي يأخذك من مبتدئ فضولي إلى صانع واثق من نفسه، درسًا تلو الآخر.</span>
+                    <span data-translate="hero-sub">Understand. Master. Build. Go Beyond.</span>
+                    <span class="ar" data-translate="hero-sub-ar">افهم. أتقن. ابنِ. وانطلق أبعد.</span>
+                    <span style="display:block; margin-top:12px;" data-translate="hero-sub-desc">DF Labs helps students truly understand programming, master their school curriculum, achieve their best results, and take their first step into the world of technology.</span>
+                    <span class="ar" style="display:block; margin-top:4px;" data-translate="hero-sub-desc-ar">DF Labs يساعد الطلاب على فهم البرمجة بعمق، وإتقان المنهج، وتحقيق أفضل نتائجهم، واتخاذ أول خطوة نحو عالم التكنولوجيا.</span>
                 </p>
                 <div class="hero-actions">
-                    <a href="#free-trial" class="btn btn-primary">Watch the Free Lesson</a>
-                    <a href="#register" class="btn btn-ghost">Join the Program</a>
+                    <a href="#register" class="btn btn-primary" data-translate="hero-btn-primary">Join the Program</a>
+                    <a href="#samples" class="btn btn-ghost" data-translate="hero-btn-secondary">See Sample Lessons</a>
                 </div>
             </div>
         </section>
-        <!-- ================= FREE TRIAL SECTION ================= -->
-        <section id="free-trial" class="section">
+
+        <!-- ================= SLIDESHOW SECTION ================= -->
+        <section id="samples" class="slideshow-section">
             <div class="wrap">
-                <div class="trial-grid">
-
-                    <!-- Copy column -->
-                    <div class="trial-copy">
-                        <span class="tag">Free Trial · تجربة مجانية</span>
-                        <h2>Try a real TechNest lesson — free, right here.</h2>
-                        <p class="lede">
-                            No sign-up, no scheduling, no waiting for a slot. Press play and see exactly how a TechNest class feels before you commit to anything.
-                            <span class="ar">بدون تسجيل، وبدون تحديد موعد، وبدون انتظار. اضغط تشغيل وشاهد بنفسك كيف يبدو درس TechNest قبل أن تلتزم بأي شيء.</span>
-                        </p>
-
-                        <div class="learn-list">
-                            <span class="learn-list-title">What you'll learn in this lesson</span>
-
-                            <div class="learn-item">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#3FC9B0" stroke-width="1.3" /><path d="M5.5 9.2l2.3 2.3 4.7-4.9" stroke="#3FC9B0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
-                                <span>
-                                    <span class="en">How a beginner-friendly project is broken into small, buildable steps</span>
-                                    <span class="ar">كيف يُقسَّم مشروع بسيط للمبتدئين إلى خطوات صغيرة يسهل بناؤها</span>
-                                </span>
-                            </div>
-
-                            <div class="learn-item">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#3FC9B0" stroke-width="1.3" /><path d="M5.5 9.2l2.3 2.3 4.7-4.9" stroke="#3FC9B0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
-                                <span>
-                                    <span class="en">The core idea behind the tool or concept, explained without jargon</span>
-                                    <span class="ar">الفكرة الأساسية وراء الأداة أو المفهوم، مشروحة بدون تعقيد</span>
-                                </span>
-                            </div>
-
-                            <div class="learn-item">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#3FC9B0" stroke-width="1.3" /><path d="M5.5 9.2l2.3 2.3 4.7-4.9" stroke="#3FC9B0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
-                                <span>
-                                    <span class="en">How a TechNest instructor teaches — pace, feedback, and hands-on style</span>
-                                    <span class="ar">أسلوب تدريس معلم TechNest — الوتيرة، والتغذية الراجعة، والطابع العملي</span>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="trial-note">
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.5l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#3FC9B0" /></svg>
-                            No account needed — this lesson plays instantly on this page
-                        </div>
-                    </div>
-
-                    <!-- Video column -->
-                    <div>
-                        <div class="video-card">
-                            <div class="video-frame" id="freeLessonFrame">
-                                <div class="video-placeholder" id="videoPlaceholder">
-                                    <div class="rings">
-                                        <div class="ring"></div><div class="ring"></div><div class="ring"></div>
-                                        <button class="play-btn" id="playPlaceholderBtn" aria-label="Play free lesson">
-                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M1 1.6v16.8c0 1.2 1.3 1.9 2.3 1.2L17 10.6c1-.6 1-2 0-2.6L3.3.4C2.3-.3 1 .4 1 1.6z" fill="#20160A" /></svg>
-                                        </button>
-                                    </div>
-                                    <span class="ph-title">Free lesson preview</span>
-                                    <span class="ph-sub">Add your video URL — see the comment in the code, marked "EDIT ME"</span>
-                                </div>
-                            </div>
-                            <div class="video-caption">
-                                <span class="len">Lesson 0 · Free Preview</span>
-                                <span class="len">≈ 12 min</span>
-                            </div>
-                            <button class="btn btn-primary btn-watch" id="watchFreeLessonBtn">
-                                Watch Free Lesson <span class="ar">/ شاهد الدرس المجاني</span>
-                            </button>
-                        </div>
-                    </div>
-
+                <div class="section-head">
+                    <span class="tag" data-translate="samples-tag">Sample Lessons</span>
+                    <h2><span data-translate="samples-title">See what you'll build.</span></h2>
+                    <p>
+                        <span data-translate="samples-desc">Here's a peek at three real lessons from the DF Labs program.</span>
+                        <span class="ar" data-translate="samples-desc-ar">لمحة عن ثلاثة دروس حقيقية من برنامج DF Labs.</span>
+                    </p>
                 </div>
 
-                <!-- Join CTA after the free lesson -->
-                <div class="trial-join">
-                    <p class="q-en">Interested in joining TechNest?</p>
-                    <p class="q-ar ar">مهتم بالانضمام إلى TechNest؟</p>
-                    <a href="#register" class="btn btn-primary join-btn">
-                        Join the Program <span class="ar">/ انضم للبرنامج</span>
+                <div class="slideshow-container">
+                    <div class="slides-wrapper" id="slidesWrapper">
+                        <!-- Slide 1 -->
+                        <div class="slide active" data-index="0">
+                            <img src="lab1.png" alt="HTML & CSS Basics" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="slide-caption" style="display:none; align-items:center; justify-content:center; flex-direction:column; height:100%; background:linear-gradient(135deg, #2A1A3E, #1A0F2A); text-align:center;">
+                                <span style="font-size:32px;">📄</span>
+                                <span style="font-size:20px; margin-top:8px;" data-translate="slide-1-title">HTML & CSS Basics</span>
+                                <span data-translate="slide-1-desc">Build your first webpage from scratch</span>
+                            </div>
+                            <div class="slide-caption">
+                                <span data-translate="slide-1-title">HTML & CSS Basics</span>
+                                <span data-translate="slide-1-desc">Build your first webpage from scratch</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide" data-index="1">
+                            <img src="lab2.png" alt="JavaScript Interactivity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="slide-caption" style="display:none; align-items:center; justify-content:center; flex-direction:column; height:100%; background:linear-gradient(135deg, #2A1A3E, #1A0F2A); text-align:center;">
+                                <span style="font-size:32px;">⚡</span>
+                                <span style="font-size:20px; margin-top:8px;" data-translate="slide-2-title">JavaScript Interactivity</span>
+                                <span data-translate="slide-2-desc">Make your pages come alive with JS</span>
+                            </div>
+                            <div class="slide-caption">
+                                <span data-translate="slide-2-title">JavaScript Interactivity</span>
+                                <span data-translate="slide-2-desc">Make your pages come alive with JS</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide" data-index="2">
+                            <img src="lab3.png" alt="Full Project Build" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="slide-caption" style="display:none; align-items:center; justify-content:center; flex-direction:column; height:100%; background:linear-gradient(135deg, #2A1A3E, #1A0F2A); text-align:center;">
+                                <span style="font-size:32px;">🚀</span>
+                                <span style="font-size:20px; margin-top:8px;" data-translate="slide-3-title">Full Project Build</span>
+                                <span data-translate="slide-3-desc">Combine everything into a real project</span>
+                            </div>
+                            <div class="slide-caption">
+                                <span data-translate="slide-3-title">Full Project Build</span>
+                                <span data-translate="slide-3-desc">Combine everything into a real project</span>
+                            </div>
+                        </div>
+
+                        <!-- Arrow controls -->
+                        <button class="slide-arrow prev" id="prevSlide" aria-label="Previous slide">‹</button>
+                        <button class="slide-arrow next" id="nextSlide" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="slideshow-dots" id="slideshowDots">
+                    <button class="active" data-index="0" aria-label="Slide 1"></button>
+                    <button data-index="1" aria-label="Slide 2"></button>
+                    <button data-index="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Join CTA under slideshow -->
+                <div style="text-align:center; margin-top:40px;">
+                    <a href="#camp" class="btn btn-primary" style="font-size:17px; padding:16px 40px;">
+                        <span data-translate="slides-join-btn">Start Your Free Journey</span>
+                        <span class="ar" data-translate="slides-join-btn-ar">/ ابدأ رحلتك المجانية</span>
                     </a>
                 </div>
-
             </div>
         </section>
 
@@ -139,62 +141,123 @@
         <section id="program" class="section">
             <div class="wrap">
                 <div class="section-head">
-                    <span class="tag">The Program</span>
-                    <h2>Built to take you from lesson zero to a finished project.</h2>
+                    <span class="tag" data-translate="program-tag">The Program</span>
+                    <h2><span data-translate="program-title">Built to take you from lesson zero to a finished project.</span></h2>
                     <p>
-                        Three stages, real projects, steady support.
-                        <span class="ar">ثلاث مراحل، مشاريع حقيقية، ودعم مستمر.</span>
+                        <span data-translate="program-desc">Three stages, real projects, steady support.</span>
+                        <span class="ar" data-translate="program-desc-ar">ثلاث مراحل، مشاريع حقيقية، ودعم مستمر.</span>
                     </p>
                 </div>
                 <div class="program-grid">
                     <div class="program-card">
-                        <span class="num">01 — Foundations</span>
-                        <h3>Get comfortable with the basics</h3>
-                        <p>Core concepts explained simply, with small exercises after every idea.</p>
-                        <p class="ar">أساسيات مشروحة ببساطة، مع تمارين صغيرة بعد كل فكرة.</p>
+                        <span class="num" data-translate="program-1-title">01 — Foundations</span>
+                        <h3 data-translate="program-1-desc">Get comfortable with the basics</h3>
+                        <p data-translate="program-1-detail">Core concepts explained simply, with small exercises after every idea.</p>
+                        <p class="ar" data-translate="program-1-detail-ar">أساسيات مشروحة ببساطة، مع تمارين صغيرة بعد كل فكرة.</p>
                     </div>
                     <div class="program-card">
-                        <span class="num">02 — Build</span>
-                        <h3>Work on a real project</h3>
-                        <p>Apply what you've learned to something you can actually show off.</p>
-                        <p class="ar">طبّق ما تعلمته على مشروع حقيقي يمكنك عرضه بفخر.</p>
+                        <span class="num" data-translate="program-2-title">02 — Build</span>
+                        <h3 data-translate="program-2-desc">Work on a real project</h3>
+                        <p data-translate="program-2-detail">Apply what you've learned to something you can actually show off.</p>
+                        <p class="ar" data-translate="program-2-detail-ar">طبّق ما تعلمته على مشروع حقيقي يمكنك عرضه بفخر.</p>
                     </div>
                     <div class="program-card">
-                        <span class="num">03 — Grow</span>
-                        <h3>Get feedback and go further</h3>
-                        <p>Instructor review, next steps, and a path to keep building.</p>
-                        <p class="ar">مراجعة من المعلم، وخطوات تالية، ومسار لمواصلة التعلم.</p>
+                        <span class="num" data-translate="program-3-title">03 — Grow</span>
+                        <h3 data-translate="program-3-desc">Get feedback and go further</h3>
+                        <p data-translate="program-3-detail">Instructor review, next steps, and a path to keep building.</p>
+                        <p class="ar" data-translate="program-3-detail-ar">مراجعة من المعلم، وخطوات تالية، ومسار لمواصلة التعلم.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+      
+        <!-- ================= FREE CAMP SECTION ================= -->
+        <section id="camp" class="camp-section">
+            <div class="wrap">
+                <div class="camp-grid">
+                    <div class="camp-content">
+                        <span class="tag" data-translate="camp-tag">🎯 Free Opportunity</span>
+                        <h2 data-translate="camp-title">Start Your Journey — Join Our Free Programming Basics Camp</h2>
+                        <p class="camp-desc" data-translate="camp-desc"> introductory camp designed for absolute beginners. Learn the fundamentals of programming in a supportive, interactive environment — completely free.</p>
+                        <p class="camp-desc ar" data-translate="camp-desc-ar">معسكر تمهيدي  مصمم للمبتدئين تمامًا. تعلم أساسيات البرمجة في بيئة داعمة وتفاعلية — مجانًا تمامًا.</p>
+
+                      
+
+                        <div class="camp-cta">
+                            <a href="#register" class="btn btn-primary camp-btn">
+                                <span data-translate="camp-btn">Reserve Your Spot — Free</span>
+                                <span class="ar" data-translate="camp-btn-ar">/ احجز مكانك — مجانًا</span>
+                            </a>
+
+                            <!-- ===== NEW DETAILS TEXT AFTER BUTTON ===== -->
+                            <div class="camp-details">
+                                <p class="camp-details-text" data-translate="camp-details-1">
+                                    Join us for a free basic camp before we start our journey together.
+                                </p>
+                                <p class="camp-details-text ar" data-translate="camp-details-1-ar">
+                                    انضم إلينا في معسكر أساسي مجاني قبل أن نبدأ رحلتنا معًا.
+                                </p>
+                                <p class="camp-details-sub" data-translate="camp-details-2">
+                                    ✨ No previous experience needed — just bring your curiosity and enthusiasm!
+                                </p>
+                                <p class="camp-details-sub ar" data-translate="camp-details-2-ar">
+                                    ✨ لا حاجة لخبرة سابقة — فقط أحضر فضولك وحماسك!
+                                </p>
+                            </div>
+
+                            <span class="camp-spots" data-translate="camp-spots">⚡ Limited spots available — first come, first served</span>
+                            <span class="camp-spots ar" data-translate="camp-spots-ar">⚡ أماكن محدودة — من الأسبق يحجز</span>
+                        </div>
+                    </div>
+
+                    <div class="camp-visual">
+                        <div class="camp-card-highlight">
+                            <div class="camp-badge">🔥 Free</div>
+                            <div class="camp-card-content">
+                                <span class="camp-emoji">🚀</span>
+                                <h3 data-translate="camp-card-title">Programming Basics Camp</h3>
+                                <ul>
+                                    <li data-translate="camp-card-item-1">✅ 5  session </li>
+                                    <li data-translate="camp-card-item-2">✅ Live online classes</li>
+                                    <li data-translate="camp-card-item-3">✅ Beginner-friendly</li>
+       
+                                </ul>
+                                <div class="camp-card-footer">
+                                    <span data-translate="camp-card-start">📅 Starts: 20 August 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- ================= REGISTER ================= -->
         <section id="register" class="section">
             <div class="wrap">
                 <div class="section-head">
-                    <span class="tag">Join the Program</span>
-                    <h2>Ready when you are.</h2>
+                    <span class="tag" data-translate="register-tag">Join the Program</span>
+                    <h2><span data-translate="register-title">Ready when you are.</span></h2>
                     <p>
-                        Leave your details and we'll reach out with the next steps.
-                        <span class="ar">اترك بياناتك وسنتواصل معك بالخطوات التالية.</span>
+                        <span data-translate="register-desc">Leave your details and we'll reach out with the next steps.</span>
+                        <span class="ar" data-translate="register-desc-ar">اترك بياناتك وسنتواصل معك بالخطوات التالية.</span>
                     </p>
                 </div>
                 <form class="register-box" id="registerForm">
                     <div class="field">
-                        <label>Full name <span class="ar">/ الاسم الكامل</span></label>
-                        <input type="text" name="name" id="fullName" placeholder="Your name" required>
+                        <label><span data-translate="register-name">Full name</span> <span class="ar" data-translate="register-name-ar">/ الاسم الكامل</span></label>
+                        <input type="text" name="name" id="fullName" data-translate-placeholder="register-name-placeholder" placeholder="Your name" required>
                     </div>
                     <div class="field">
-                        <label>Email <span class="ar">/ البريد الإلكتروني</span></label>
-                        <input type="email" name="email" id="email" placeholder="you@example.com" required>
+                        <label><span data-translate="register-email">Email</span> <span class="ar" data-translate="register-email-ar">/ البريد الإلكتروني</span></label>
+                        <input type="email" name="email" id="email" data-translate-placeholder="register-email-placeholder" placeholder="you@example.com" required>
                     </div>
                     <div class="field">
-                        <label>Phone / WhatsApp <span class="ar">/ الهاتف</span></label>
-                        <input type="tel" name="phone" id="phone" placeholder="+20 ...">
+                        <label><span data-translate="register-phone">Phone / WhatsApp</span> <span class="ar" data-translate="register-phone-ar">/ الهاتف</span></label>
+                        <input type="tel" name="phone" id="phone" data-translate-placeholder="register-phone-placeholder" placeholder="+20 ...">
                     </div>
                     <button type="submit" class="btn btn-primary" id="submitBtn">
-                        Submit <span class="ar">/ إرسال</span>
+                        <span data-translate="register-submit">Submit</span> <span class="ar" data-translate="register-submit-ar">/ إرسال</span>
                     </button>
                     <div id="formMessage" style="margin-top: 16px; text-align: center; display: none;"></div>
                 </form>
@@ -204,7 +267,71 @@
     </main>
 
     <footer>
-        <div class="wrap">TechNest — © 2026</div>
+        <div class="wrap">
+            <div class="footer-grid">
+
+                <!-- About Me -->
+                <div class="footer-col">
+                    <h4 data-translate="footer-about-title">👨‍🏫 About Me</h4>
+                    <p data-translate="footer-about-desc">I'm a passionate programming teacher dedicated to making coding accessible and exciting for high school students.</p>
+                    <div class="footer-badges">
+                        <span data-translate="footer-badge-1">🎓 3+ Years Teaching</span>
+                        <span data-translate="footer-badge-2">💻 Full-Stack Developer</span>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h4 data-translate="footer-contact-title">📬 Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📧 <a href="mailto:dalalfarghally@gmail.com">dalalfarghally@gmail.com</a></li>
+                        <li>
+                            📱 <a href="https://wa.me/201012655206" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                                +20 1012655206
+                                <span class="whatsapp-badge" data-translate="footer-whatsapp-badge">💬 WhatsApp</span>
+                            </a>
+                        </li>
+                        <li data-translate="footer-location">📍 Cairo, Egypt</li>
+                 
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4 data-translate="footer-links-title">🔗 Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-translate="footer-link-home">Home</a></li>
+                        <li><a href="#samples" data-translate="footer-link-samples">Sample Lessons</a></li>
+                        <li><a href="#program" data-translate="footer-link-program">Program</a></li>
+                        <li><a href="#camp" data-translate="footer-link-camp">Free Camp</a></li>
+                        <li><a href="#register" data-translate="footer-link-join">Join Class</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div class="footer-col">
+                    <h4 data-translate="footer-connect-title">🌟 Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/dalalfarghaly/" target="_blank" data-translate="footer-social-linkedin">🔗 LinkedIn</a>
+                        <a href="https://www.youtube.com/@DalalFarghaly" target="_blank" data-translate="footer-social-youtube">▶️ YouTube</a>
+                        <a href="https://github.com/DalalFarghaly" target="_blank" data-translate="footer-social-github">🐙 GitHub</a>
+                        <a href="https://wa.me/201012655206" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" data-translate="footer-social-whatsapp">
+                            💬 WhatsApp
+                        </a>
+                    </div>
+                    <div class="credentials">
+                        <p data-translate="footer-cred-1">🏅 Programming Instructor</p>
+                        <p data-translate="footer-cred-2">📖 B.Sc. Computer Science</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p data-translate="footer-copyright">© 2026 DalalFarghaly — Building the next generation of coders 🚀</p>
+                <p class="footer-mission" data-translate="footer-mission">"Every student can code when taught with patience and passion."</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
